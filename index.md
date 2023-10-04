@@ -1,6 +1,6 @@
 ---
 ---
-<script src="assets/js/sorttable.js"></script>
+<script src="js/sorttable.js"></script>
 
 <details open>
 <summary>

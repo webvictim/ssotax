@@ -5,7 +5,6 @@ description: >-
 
 url: https://robchahin.github.io/sso-wall-of-shame
 
-theme: jekyll-theme-cayman
 kramdown:
   parse_block_html: true
 
