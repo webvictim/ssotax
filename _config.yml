@@ -3,7 +3,8 @@ description: >-
   A list of vendors that treat single sign-on as a luxury feature, not a core
   security requirement.
 
-url: https://robchahin.github.io/sso-wall-of-shame
+url: https://ssotax.github.io/ssotax
+baseurl: https://ssotax.github.io/ssotax
 
 kramdown:
   parse_block_html: true
