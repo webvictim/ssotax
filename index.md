@@ -39,24 +39,39 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 ## The List
 
 <table class="sortable">
-<thead>
-<tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
-</thead>
+  <thead>
+    <tr>
+      <th>Vendor</th>
+      <th>Base Pricing</th>
+      <th>SSO Pricing</th>
+      <th>Pricing Scheme</th>
+      <th>Increase</th>
+      <th>Notes</th>
+      <th>Source</th>
+      <th>Date Updated</th>
+    </tr>
+  </thead>
 <tbody>
 {% for vendor in vendors %}
 <tr>
 <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
-<td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
-<td markdown="span">{{ vendor.percent_increase }}</td>
+<td markdown="span">{{ vendor.currency }}{{ vendor.base_pricing }}</td>
+<td markdown="span">{{ vendor.currency }}{{ vendor.sso_pricing }}</td>
+<td markdown="span">{{ vendor.pricing_scheme }}</td>
+<td markdown="span">{{ vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round }}%</td>
+<td style="font-size: 0.7em;" title="{{ vendor.notes }}">{{ vendor.notes | truncate: 50 }}</td>
 <td>
-{% for source in vendor.pricing_source %}
-{% if forloop.first == false %}
-&amp;
-{% endif %}
-<a href="{{ source }}">&#128279;</a>
+{% for source in vendor.pricing_sources %}
+  {% if forloop.first == false %}
+    &amp;
+  {% endif %}
+  {% if source contains "://" %}
+    <a href="{{ source }}" target="_blank">&#128279;</a>
+  {% else %}
+    {{ source }}
+  {% endif %}
 {% endfor %}
-{{ vendor.pricing_note }}</td>
+</td>
 <td>{{ vendor.updated_at }}</td>
 </tr>
 {% endfor %}

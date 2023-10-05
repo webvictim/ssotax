@@ -1,10 +1,15 @@
 ---
-base_pricing: $10 per u/m
-footnotes: '[^airtable-price]: $60 per user per month, minimum of $3000 per month.'
+base_pricing: 10
+currency: $
+notes: $60 per user per month, minimum of $3000 per month.
 name: Airtable
-percent_increase: 500%
-pricing_note: Quote
-pricing_source: https://airtable.com/pricing
-sso_pricing: $60 per u/m
+pricing_sources:
+  - https://airtable.com/pricing
+  - Quote
+pricing_scheme: per user/month
+sign_in_oauth_providers:
+  - Apple
+  - Google
+sso_pricing: 60
 updated_at: 2019-10-19
 vendor_url: https://airtable.com
