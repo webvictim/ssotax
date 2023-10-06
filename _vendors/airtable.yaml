@@ -1,6 +1,6 @@
 ---
 base_pricing: 10
-currency: $
+currency: USD
 notes: $60 per user per month, minimum of $3000 per month.
 name: Airtable
 pricing_sources:

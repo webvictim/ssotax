@@ -1,6 +1,6 @@
 ---
 base_pricing: 136
-currency: $
+currency: USD
 name: Intercom
 pricing_sources:
   - https://twitter.com/brianebeyer/status/1053797786301489153
