@@ -1,5 +1,4 @@
 <head>
-  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="generator" content="Jekyll">
@@ -8,6 +7,17 @@
   <meta name="description"
     content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
+  <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description"
+    content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:locale" content="en" />
+  <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description"
+    content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:url" content="{{ site.url }}" />
   <!-- CSS & fonts -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
