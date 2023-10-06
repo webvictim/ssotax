@@ -41,7 +41,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <table class="sortable">
   <thead>
     <tr>
-      <th>Vendor</th>
+      <th colspan="2">Vendor</th>
       <th>Base Pricing</th>
       <th>SSO Pricing</th>
       <th>Pricing Scheme</th>
@@ -54,7 +54,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
   <tbody>
     {% for vendor in vendors %}
       <tr>
-        <td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
+        <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | split: '//' | last | split: '/' | first }}?size=20" /></td>
+        <td markdown="span"><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td markdown="span">{{ vendor.base_pricing | format: vendor.currency }}</td>
         <td markdown="span">{{ vendor.sso_pricing | format: vendor.currency}}</td>
         <td markdown="span">{{ vendor.pricing_scheme }}</td>
@@ -81,6 +82,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
     {% endfor %}
   </tbody>
 </table>
+
+<div style="font-size: 12pt" markdown="span">Vendor logos are provided by Clearbit.</div>
 
 ## The Other List ##
 Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
