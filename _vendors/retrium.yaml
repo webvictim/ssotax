@@ -1,8 +1,10 @@
 ---
-base_pricing: $39 per month
+base_pricing: 39
+currency: USD
 name: Retrium
-percent_increase: 51%
-pricing_source: https://www.retrium.com/pricing
-sso_pricing: $59 per month
+pricing_scheme: per month
+pricing_sources:
+  - https://www.retrium.com/pricing
+sso_pricing: 59
 updated_at: 2022-06-07
 vendor_url: https://www.retrium.com

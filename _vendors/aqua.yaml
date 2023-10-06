@@ -1,8 +1,10 @@
 ---
-base_pricing: $849 per month
+base_pricing: 849
+currency: USD
 name: Aqua
-percent_increase: 147%
-pricing_source: https://aquasec.com/pricing/
-sso_pricing: $2099 per month
+pricing_scheme: per month
+pricing_sources:
+  - https://aquasec.com/pricing/
+sso_pricing: 2099
 updated_at: 2021-09-06
 vendor_url: https://aquasec.com

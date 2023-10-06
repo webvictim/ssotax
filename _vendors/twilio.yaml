@@ -1,10 +1,11 @@
 ---
-base_pricing: $0
-footnotes: '[^twilio]: Base pricing is extremely variable. SSO is the greater of $15,000
-  or a 30% surcharge, so could be anywhere from 30% to ''000s%'
+base_pricing: 0
+currency: USD
 name: Twilio
-percent_increase: 30%
-pricing_source: https://www.twilio.com/enterprise
-sso_pricing: See Notes[^twilio]
+notes: Base pricing is extremely variable. SSO is the greater of $15,000 or a 30% surcharge, so could be anywhere from 30% to 000s%
+pricing_scheme:
+pricing_sources:
+  - https://www.twilio.com/enterprise
+sso_pricing: unknown
 updated_at: 2018-10-22
 vendor_url: https://twilio.com

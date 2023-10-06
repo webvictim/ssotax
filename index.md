@@ -25,7 +25,7 @@ If companies claim to "take your security seriously", then SSO should be availab
 Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
 </details>
 
-{% assign all = site.vendors | where: "currency", "USD" | sort: "name" %}
+{% assign all = site.vendors | sort: "name" %}
 {% assign vendors = "" | split: ',' %}
 {% assign call_us = "" | split: ',' %}
 {% for vendor in all %}
@@ -54,12 +54,24 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
   <tbody>
     {% for vendor in vendors %}
       <tr>
-        <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | split: '//' | last | split: '/' | first }}?size=20" /></td>
+        <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" /></td>
         <td markdown="span"><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td markdown="span">{{ vendor.base_pricing | format: vendor.currency }}</td>
-        <td markdown="span">{{ vendor.sso_pricing | format: vendor.currency}}</td>
+        <td markdown="span">
+          {% if vendor.sso_pricing == "unknown" %}
+            ???
+          {% else %}
+            {{ vendor.sso_pricing | format: vendor.currency}}
+          {% endif %}
+        </td>
         <td markdown="span">{{ vendor.pricing_scheme }}</td>
-        <td markdown="span">{{ vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round }}%</td>
+        <td markdown="span">
+          {% if vendor.sso_pricing == "unknown" %}
+            ???
+          {% else %}
+            {{ vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round }}%
+          {% endif %}
+        </td>
         <td style="font-size: 0.7em;">
           <div class="tooltip">{{ vendor.notes | truncate: 30 }}
             <span class="tooltiptext">{{ vendor.notes }}</span>
@@ -83,7 +95,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
   </tbody>
 </table>
 
-<div style="font-size: 12pt" markdown="span">Vendor logos are provided by Clearbit.</div>
+<div style="font-size: 12pt; color: #dddddd;" markdown="span">Vendor logos are provided by Clearbit.</div>
 
 ## The Other List ##
 Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.

@@ -1,9 +1,11 @@
 ---
-base_pricing: $12 per u/m
+base_pricing: 12
+currency: USD
 name: Calendly
-percent_increase: 108%
-pricing_note: Quote
-pricing_source: https://www.calendly.com/pricing
-sso_pricing: $25 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.calendly.com/pricing
+  - Quote
+sso_pricing: 25
 updated_at: 2022-03-03
 url: https://calendly.com

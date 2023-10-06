@@ -1,8 +1,10 @@
 ---
-base_pricing: $10 per u/m
+base_pricing: 10
+currency: USD
 name: Mural
-percent_increase: 80%
-pricing_source: https://www.mural.co/pricing
-sso_pricing: $18 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.mural.co/pricing
+sso_pricing: 18
 updated_at: 2021-09-06
 vendor_url: https://www.mural.co/

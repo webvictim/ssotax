@@ -1,11 +1,11 @@
 ---
-base_pricing: $79/mo[^raygun]
-footnotes: '[^raygun]: From their SSO tooltip: ''Basic SSO covers social SSO providers
-  only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory,
-  Auth0, Okta and OneLogin)'''
+base_pricing: 79
+currency: USD
 name: Raygun
-percent_increase: 721%
-pricing_source: https://raygun.com/platform/crash-reporting
-sso_pricing: $649/mo
+notes: 'From their SSO tooltip: ''Basic SSO covers social SSO providers only (e.g. Facebook), Advanced SSO includes SAML2 providers (including ActiveDirectory, Auth0, Okta and OneLogin)'''
+pricing_scheme: per month
+pricing_sources:
+  - https://raygun.com/platform/crash-reporting
+sso_pricing: 649
 updated_at: 2019-10-10
 vendor_url: https://raygun.com

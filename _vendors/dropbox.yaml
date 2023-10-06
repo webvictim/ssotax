@@ -1,8 +1,10 @@
 ---
-base_pricing: $15 per u/m
+base_pricing: 15
+currency: USD
 name: Dropbox
-percent_increase: 67%
-pricing_source: https://www.dropbox.com/business/pricing
-sso_pricing: $25 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.dropbox.com/business/pricing
+sso_pricing: 25
 updated_at: 2018-10-17
 vendor_url: https://www.dropbox.com

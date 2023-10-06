@@ -1,8 +1,10 @@
 ---
-base_pricing: $49 per u/m
+base_pricing: 49
+currency: USD
 name: Copper CRM
-percent_increase: 143%
-pricing_source: https://copper.com/pricing
-sso_pricing: $119 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://copper.com/pricing
+sso_pricing: 119
 updated_at: 2019-07-31
 vendor_url: https://copper.com

@@ -1,8 +1,11 @@
 ---
-base_pricing: $25 per u/m
+base_pricing: 25
+currency: USD
 name: SurveyMonkey
-percent_increase: 200%++
-pricing_source: https://www.surveymonkey.com/pricing/details/
-sso_pricing: Call Us! (over $75 per u/m)
+nots: SSO pricing over $75 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.surveymonkey.com/pricing/details/
+sso_pricing: unknown
 updated_at: 2021-09-06
 vendor_url: https://www.surveymonkey.com

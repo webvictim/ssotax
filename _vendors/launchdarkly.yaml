@@ -1,9 +1,11 @@
 ---
-base_pricing: $65 per u/m
+base_pricing: 65
+currency: USD
 name: LaunchDarkly
-percent_increase: 92%
-pricing_note: Quote
-pricing_source: https://launchdarkly.com/pricing/
-sso_pricing: $125 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://launchdarkly.com/pricing/
+  - Quote
+sso_pricing: 125
 updated_at: 2020-01-24
 vendor_url: https://launchdarkly.com

@@ -1,8 +1,10 @@
 ---
-base_pricing: $10 per u/m
+base_pricing: 10
+currency: USD
 name: Trello
-percent_increase: 110%
-pricing_source: https://trello.com/pricing
-sso_pricing: $21 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://trello.com/pricing
+sso_pricing: 21
 updated_at: 2018-10-17
 vendor_url: https://trello.com

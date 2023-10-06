@@ -1,9 +1,11 @@
 ---
-base_pricing: $7 per u/m
+base_pricing: 7
+currency: USD
 name: Monday.com
-percent_increase: 286%
-pricing_note: Quote
-pricing_source: https://monday.com/pricing/
-sso_pricing: $27 per u/m
+pricing_scheme: per user/month
+pricing_sources:
+  - https://monday.com/pricing/
+  - Quote
+sso_pricing: 27
 updated_at: 2020-05-26
 vendor_url: https://monday.com

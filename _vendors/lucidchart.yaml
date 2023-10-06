@@ -1,8 +1,10 @@
 ---
-base_pricing: $7 per u/m
+base_pricing: 7
+currency: USD
 name: Lucidchart
-percent_increase: ???
-pricing_source: https://www.lucidchart.com/users/registerLevel
-sso_pricing: Call Us!
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.lucidchart.com/users/registerLevel
+sso_pricing: unknown
 updated_at: 2018-10-17
 vendor_url: https://www.lucidchart.com

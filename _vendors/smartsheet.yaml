@@ -1,8 +1,10 @@
 ---
-base_pricing: $25 per u/m
+base_pricing: 25
+currency: USD
 name: SmartSheet
-percent_increase: ???
-pricing_source: https://www.smartsheet.com/pricing
-sso_pricing: Call Us!
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.smartsheet.com/pricing
+sso_pricing: unknown
 updated_at: 2018-10-22
 vendor_url: https://smartsheet.com

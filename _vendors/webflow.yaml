@@ -1,8 +1,10 @@
 ---
-base_pricing: $12 per u/m
+base_pricing: 12
+currency: USD
 name: Webflow
-percent_increase: ???
-pricing_source: https://webflow.com/pricing
-sso_pricing: Call Us!
+pricing_scheme: per user/month
+pricing_sources:
+  - https://webflow.com/pricing
+sso_pricing: unknown
 updated_at: 2022-07-07
 vendor_url: https://webflow.com

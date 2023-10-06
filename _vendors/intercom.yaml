@@ -2,10 +2,10 @@
 base_pricing: 136
 currency: USD
 name: Intercom
+pricing_scheme: per user/month
 pricing_sources:
   - https://twitter.com/brianebeyer/status/1053797786301489153
   - https://www.intercom.com/pricing
-pricing_scheme: per user/month
 sso_pricing: 202
 updated_at: 2018-10-20
 vendor_url: https://www.intercom.com

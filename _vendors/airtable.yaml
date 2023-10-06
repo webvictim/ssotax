@@ -1,12 +1,12 @@
 ---
 base_pricing: 10
 currency: USD
-notes: $60 per user per month, minimum of $3000 per month.
 name: Airtable
+notes: $60 per user per month, minimum of $3000 per month.
+pricing_scheme: per user/month
 pricing_sources:
   - https://airtable.com/pricing
   - Quote
-pricing_scheme: per user/month
 sign_in_oauth_providers:
   - Apple
   - Google

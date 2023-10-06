@@ -1,11 +1,12 @@
 ---
-base_pricing: $25 per u/m
-footnotes: '[^asana-price]: Based on business vs. enterprise tier quote; premium is
-  the lower paid tier and would reflect a larger tax.'
+base_pricing: 25
+currency: USD
 name: Asana
-percent_increase: 140%
-pricing_note: Quote
-pricing_source: https://asana.com/pricing
-sso_pricing: $60 per u/m[^asana-price]
+notes: Based on business vs. enterprise tier quote; premium is the lower paid tier and would reflect a larger tax.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://asana.com/pricing
+  - Quote
+sso_pricing: 60
 updated_at: 2020-12-09
 vendor_url: https://asana.com

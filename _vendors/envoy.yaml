@@ -1,8 +1,10 @@
 ---
-base_pricing: $99 per location/m
+base_pricing: 99
+currency: USD
 name: Envoy
-percent_increase: 202%
-pricing_source: https://envoy.com/pricing/
-sso_pricing: $299 per location/m
+pricing_scheme: per location/month
+pricing_sources:
+  - https://envoy.com/pricing/
+sso_pricing: 299
 updated_at: 2020-02-17
 vendor_url: https://envoy.com
