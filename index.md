@@ -97,7 +97,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% endfor %}
         </td>
         <td>{{ vendor.updated_at }}</td>
-        <td><a href="https://github.com/ssotax/ssotax/edit/master/_vendors/{{ vendor.url | remove: "/vendors/" }}" target="_blank"><img src="img/pencil.svg" width="15" height="15" alt="Edit {{ vendor.name }}" /></a></td>
+        <td><a href="{{ site.github_url }}/edit/master/_vendors/{{ vendor.url | remove: "/vendors/" }}" target="_blank"><img src="img/pencil.svg" width="15" height="15" alt="Edit {{ vendor.name }}" /></a></td>
       </tr>
     {% endfor %}
   </tbody>

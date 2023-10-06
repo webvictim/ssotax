@@ -6,6 +6,8 @@ description: >-
 url: https://ssotax.github.io/ssotax
 baseurl: https://ssotax.github.io/ssotax
 
+github_url: https://github.com/ssotax/ssotax
+
 kramdown:
   parse_block_html: true
 
