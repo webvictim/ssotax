@@ -55,17 +55,17 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
     {% for vendor in vendors %}
       <tr>
         <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" /></td>
-        <td markdown="span"><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
-        <td markdown="span">{{ vendor.base_pricing | format: vendor.currency }}</td>
-        <td markdown="span">
+        <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
+        <td>{{ vendor.base_pricing | format: vendor.currency }}</td>
+        <td>
           {% if vendor.sso_pricing == "unknown" %}
             ???
           {% else %}
             {{ vendor.sso_pricing | format: vendor.currency}}
           {% endif %}
         </td>
-        <td markdown="span">{{ vendor.pricing_scheme }}</td>
-        <td markdown="span">
+        <td>{{ vendor.pricing_scheme }}</td>
+        <td>
           {% if vendor.sso_pricing == "unknown" %}
             ???
           {% else %}
@@ -73,7 +73,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% endif %}
         </td>
         <td style="font-size: 0.7em;">
-          <div class="tooltip">{{ vendor.notes | truncate: 30 }}
+          <div class="tooltip">{{ vendor.notes | truncate: 25 }}
             <span class="tooltiptext">{{ vendor.notes }}</span>
           </div>
         </td>
@@ -96,34 +96,6 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 </table>
 
 <div style="font-size: 12pt; color: #dddddd;" markdown="span">Vendor logos are provided by Clearbit.</div>
-
-## The Other List ##
-Some vendors simply do not list their pricing for SSO because the pricing is negotiated with an account manager. These vendors get their own table as we assume they apply a significant premium for SSO.
-
-<table class="sortable">
-<thead>
-<tr><th>Vendor</th><th>Base Pricing</th><th>SSO Pricing</th><th>% Increase</th><th>Source</th><th>Date Updated</th></tr>
-</thead>
-<tbody>
-{% for vendor in call_us %}
-<tr>
-<td markdown="span"><a href="{{ vendor.vendor_url }}">{{ vendor.name }}</a></td>
-<td markdown="span">{{ vendor.base_pricing }}</td>
-<td markdown="span">{{ vendor.sso_pricing }}</td>
-<td markdown="span">{{ vendor.percent_increase }}</td>
-<td>
-{% for source in vendor.pricing_source %}
-{% if forloop.first == false %}
-&amp;
-{% endif %}
-<a href="{{ source }}">&#128279;</a>
-{% endfor %}
-{{ vendor.pricing_note }}</td>
-<td>{{ vendor.updated_at }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
 
 ## FAQs
 
@@ -168,11 +140,3 @@ But it costs money to provide SAML support, so we can't offer it for free!
 </summary>
   While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
 </details>
-
-## Footnotes
-{% for vendor in vendors %}
-{{ vendor.footnotes }}
-{% endfor %}
-{% for vendor in call_us %}
-{{ vendor.footnotes }}
-{% endfor %}
