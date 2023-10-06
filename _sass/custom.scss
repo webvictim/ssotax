@@ -57,5 +57,13 @@ table {
 }
 
 tr:hover {
-  background-color: #eeeeee;
+  background-color: #eee;
+}
+
+// Sortable tables
+table.sortable thead {
+  background-color: #ccc;
+  color: #666666;
+  font-weight: bold;
+  cursor: pointer;
 }

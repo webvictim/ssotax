@@ -41,7 +41,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
 <table class="sortable">
   <thead>
     <tr>
-      <th colspan="2">Vendor</th>
+      <th class="sorttable_nosort"></th>
+      <th>Vendor</th>
       <th>Base Pricing</th>
       <th>SSO Pricing</th>
       <th>Pricing Scheme</th>
@@ -53,11 +54,16 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
   </thead>
   <tbody>
     {% for vendor in vendors %}
+      {% if vendor.sso_pricing == "unknown" %}
+        {% assign sso_increase = "unknown" %}
+      {% else %}
+        {% assign sso_increase = vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round %}
+      {% endif %}
       <tr>
         <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" /></td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
-        <td>{{ vendor.base_pricing | format: vendor.currency }}</td>
-        <td>
+        <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
+        <td sorttable_customkey="{{ vendor.sso_pricing }}">
           {% if vendor.sso_pricing == "unknown" %}
             ???
           {% else %}
@@ -65,11 +71,11 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% endif %}
         </td>
         <td>{{ vendor.pricing_scheme }}</td>
-        <td>
-          {% if vendor.sso_pricing == "unknown" %}
+        <td sorttable_customkey="{{ sso_increase }}">
+          {% if sso_increase == "unknown" %}
             ???
           {% else %}
-            {{ vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round }}%
+            {{ sso_increase }}%
           {% endif %}
         </td>
         <td style="font-size: 0.7em;">
