@@ -59,7 +59,11 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
         <td markdown="span">{{ vendor.sso_pricing | format: vendor.currency}}</td>
         <td markdown="span">{{ vendor.pricing_scheme }}</td>
         <td markdown="span">{{ vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round }}%</td>
-        <td style="font-size: 0.7em;" title="{{ vendor.notes }}">{{ vendor.notes | truncate: 50 }}</td>
+        <td style="font-size: 0.7em;">
+          <div class="tooltip">{{ vendor.notes | truncate: 30 }}
+            <span class="tooltiptext">{{ vendor.notes }}</span>
+          </div>
+        </td>
         <td>
           {% for source in vendor.pricing_sources %}
             {% if forloop.first == false %}
