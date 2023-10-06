@@ -48,3 +48,14 @@
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
+
+// Table Hover
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #eeeeee;
+}
