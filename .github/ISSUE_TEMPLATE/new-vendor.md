@@ -1,22 +1,38 @@
 ---
-name: New vendor
-about: I'd like to add a vendor but can't / won't submit a PR
-
+name: Add/Update Vendor
+about: Use this template to create a pull request friendly issue.
+title: "Add/Update Vendor: [Vendor]"
 ---
 
-**What is the vendor's name?**
-e.g. Slack
+**Do you want to add or update the vendor? Adjust the title accordingly!**.
 
-**What is the vendor's pricing site?**
-e.g. https://slack.com/pricing
+**How to use? Fill the yaml file below!**
+- **name:** Use the vendors name 
+- **vendor_url:** Use the vendors public website
+- **base_pricing:** Use the vendors cheapest available price suitable for teams/companies. A plan limited to less than 10 users may not be suited for companies.
+- **sso_pricing:** Use the vendors cheapest price that includes SSO. 
+- **scim_pricing:** Use the vendors cheapest price that includes SCIM. 
+- **pricing_scheme:** How is the pricing? Is it per user per month? Per month?
+- **pricing_sources:** Add a link or a note to where you got the pricing from. One per line.
+- **notes:** If you need to clarify pricing, please add a note.
+- **sign_in_oauth_providers:** Do they support social login providers like Google, Apple, Github etc.? One per line.
+- **updated_at:** yyyy-mm-dd of the day you filed this. 
 
-**What is the base pricing? Use the lowest tier that looks sane for a small business customer, not free or personal tiers.**
-e.g. $5 per user/month, $3.33 per instance/month
-
-**What is the minimum pricing for SSO support?**
-e.g. $10 per user/month, $6 per instance/month
-
-**Does this pricing info come from a quote or other non-public source?**
-Add any additional pricing context here.
-
-**Are there any caveats we should list in the footnotes?**
+```yaml
+---
+base_pricing: 10
+currency: USD
+name: Example Vendor
+notes: You can add SSO to a plan for $5 per u/m.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://example.com/pricing
+  - Quote
+scim_pricing: 60
+sign_in_oauth_providers:
+  - Apple
+  - Google
+sso_pricing: 60
+updated_at: 2007-07-29
+vendor_url: https://example.com
+```
