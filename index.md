@@ -50,6 +50,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       <th>Notes</th>
       <th>Source</th>
       <th>Date Updated</th>
+      <th class="sorttable_nosort"></th>
     </tr>
   </thead>
   <tbody>
@@ -60,7 +61,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
         {% assign sso_increase = vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round %}
       {% endif %}
       <tr>
-        <td><img style="margin-bottom: 3px;" src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" /></td>
+        <td><img src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" /></td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
         <td sorttable_customkey="{{ vendor.sso_pricing }}">
@@ -96,6 +97,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% endfor %}
         </td>
         <td>{{ vendor.updated_at }}</td>
+        <td><a href="https://github.com/ssotax/ssotax/edit/master/_vendors/{{ vendor.url | remove: "/vendors/" }}" target="_blank"><img src="img/pencil.svg" width="15" height="15" alt="Edit {{ vendor.name }}" /></a></td>
       </tr>
     {% endfor %}
   </tbody>
