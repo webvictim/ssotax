@@ -1,7 +1,7 @@
 ---
 base_pricing: 0.2992
 currency: USD
-name: Elastic
+name: Elastic Cloud
 notes: Pricing based on a random small deployment using their pricing calculator.
 pricing_scheme:
 pricing_sources:

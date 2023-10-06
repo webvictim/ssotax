@@ -1,7 +1,7 @@
 ---
 base_pricing: 7
 currency: USD
-name: Docker
+name: Docker Hub
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.docker.com/pricing
