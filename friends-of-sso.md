@@ -12,6 +12,7 @@ description: A list of vendors who understand and value the importance of securi
       <th>Vendor</th>
       <th>SSO on all Paid Plans</th>
       <th>SSO on Free Plans</th>
+      <th>SCIM starting on Plan</th>
       <th>Source</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
@@ -19,6 +20,14 @@ description: A list of vendors who understand and value the importance of securi
   </thead>
   <tbody>
     {% for vendor in site.vendors_good %}
+      {% case vendor.scim_starting_on_plan %}
+        {% when "highest" %}
+          {% assign scim_color = "red" %}
+        {% when "lowest", "free" %}
+          {% assign scim_color = "green" %}
+        {% else %}
+          {% assign scim_color = "black" %}
+      {% endcase %}
       <tr>
         <td class="actions">
           {% include vendor_logo.html vendor_url=vendor.vendor_url %}
@@ -33,7 +42,10 @@ description: A list of vendors who understand and value the importance of securi
           {% if vendor.sso_on_free_plans %}
             <img src="img/checkmark_green.svg" width="20" height="20" alt="Yes" />
           {% endif %}
-          </td>
+        </td>
+        <td style="color: {{ scim_color }}; font-weight: bold; text-align: center;">
+          {{ vendor.scim_starting_on_plan }}
+        </td>
         <td style="text-align: center;">
           {% include vendor_pricing_sources.html pricing_sources=vendor.sources %}
         </td>

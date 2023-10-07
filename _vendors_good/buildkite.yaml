@@ -2,9 +2,10 @@
 name: Buildkite
 sources:
   - https://buildkite.com/pricing
+scim_starting_on_plan: highest
 sign_in_oauth_providers:
   - Github
 sso_on_free_plans: false
 sso_on_all_paid_plans: true
-updated_at: 2023-10-07
+updated_at: 2023-10-06
 vendor_url: https://buildkite.com
