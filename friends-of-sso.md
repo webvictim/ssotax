@@ -18,7 +18,7 @@ description: A list of vendors who understand and value the importance of securi
       <th>SSO on Free Plans</th>
       <th>SCIM starting on Plan</th>
       <th>Source</th>
-      <th>Free OAuth Providers</th>
+      <th>Free Sign-In OAuth Providers</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>

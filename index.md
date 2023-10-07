@@ -43,7 +43,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       <th>Increase</th>
       <th>Notes</th>
       <th>Source</th>
-      <th>Free OAuth Providers</th>
+      <th>Free Sign-In OAuth Providers</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>
