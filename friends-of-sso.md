@@ -38,12 +38,12 @@ description: A list of vendors who understand and value the importance of securi
           {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
-        <td>
+        <td sorttable_customkey="{{ vendor.sso_on_all_paid_plans }}">
           {% if vendor.sso_on_all_paid_plans %}
             <img src="img/checkmark_blue.svg" width="20" height="20" alt="Yes" />
           {% endif %}
         </td>
-        <td>
+        <td sorttable_customkey="{{ vendor.sso_on_free_plans }}">
           {% if vendor.sso_on_free_plans %}
             <img src="img/checkmark_green.svg" width="20" height="20" alt="Yes" />
           {% endif %}

@@ -1,0 +1,11 @@
+---
+name: Heap
+sources:
+  - https://www.heap.io/pricing
+scim_starting_on_plan: highest
+sign_in_oauth_providers:
+  - Google
+sso_on_free_plans: true
+sso_on_all_paid_plans: true
+updated_at: 2023-10-07
+vendor_url: https://www.heap.io
