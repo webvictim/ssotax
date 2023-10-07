@@ -4,7 +4,7 @@ currency: USD
 name: TestRail Cloud
 pricing_scheme: per user/month
 pricing_sources:
-  - https://www.gurock.com/testrail/pricing/cloud-enterprise
+  - https://www.testrail.com/pricing/
 sso_pricing: 69
 updated_at: 2021-09-06
-vendor_url: https://www.gurock.com/testrail/
+vendor_url: https://www.testrail.com
