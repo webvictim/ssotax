@@ -13,3 +13,4 @@ kramdown:
 
 collections:
   - vendors
+  - vendors_good

@@ -1,6 +1,6 @@
 ---
 ---
-<script src="js/sorttable.js"></script>
+
 
 <details open>
 <summary>
