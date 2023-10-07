@@ -34,7 +34,7 @@ description: A list of vendors who understand and value the importance of securi
       {% endcase %}
       <tr>
         <td class="actions">
-          {% include vendor_logo.html vendor_url=vendor.vendor_url %}
+          {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td>

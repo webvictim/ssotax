@@ -56,7 +56,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       {% endif %}
       <tr>
         <td class="actions">
-          {% include vendor_logo.html vendor_url=vendor.vendor_url %}
+          {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
