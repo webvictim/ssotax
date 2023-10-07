@@ -25,17 +25,6 @@ If companies claim to "take your security seriously", then SSO should be availab
 Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
 </details>
 
-{% assign all = site.vendors | sort: "name" %}
-{% assign vendors = "" | split: ',' %}
-{% assign call_us = "" | split: ',' %}
-{% for vendor in all %}
-	{% if vendor.sso_pricing contains "Call" %}
-		{% assign call_us = call_us | push: vendor %}
-	{% else %}
-		{% assign vendors = vendors | push: vendor %}
-	{% endif %}
-{% endfor %}
-
 ## The List
 
 <table class="sortable">
@@ -49,12 +38,12 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       <th>Increase</th>
       <th>Notes</th>
       <th>Source</th>
-      <th>Date Updated</th>
+      <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>
   </thead>
   <tbody>
-    {% for vendor in vendors %}
+    {% for vendor in site.vendors %}
       {% if vendor.sso_pricing == "unknown" %}
         {% assign sso_increase = "unknown" %}
       {% else %}
