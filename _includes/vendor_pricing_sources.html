@@ -1,0 +1,10 @@
+{% for source in include.pricing_sources %}
+{% if forloop.first == false %}
+&amp;
+{% endif %}
+{% if source contains "://" %}
+<a href="{{ source }}" target="_blank">&#128279;</a>
+{% else %}
+{{ source }}
+{% endif %}
+{% endfor %}

@@ -1,4 +1,5 @@
 ---
+title: Wall of Shame
 ---
 
 
@@ -25,7 +26,7 @@ If companies claim to "take your security seriously", then SSO should be availab
 Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
 </details>
 
-## The List
+## {{ page.title }}
 
 <table class="sortable">
   <thead>
@@ -51,7 +52,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       {% endif %}
       <tr>
         <td class="actions">
-          <img src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" />
+          {% include vendor_logo.html vendor_url=vendor.vendor_url %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
@@ -76,27 +77,18 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           </div>
         </td>
         <td>
-          {% for source in vendor.pricing_sources %}
-            {% if forloop.first == false %}
-              &amp;
-            {% endif %}
-            {% if source contains "://" %}
-              <a href="{{ source }}" target="_blank">&#128279;</a>
-            {% else %}
-              {{ source }}
-            {% endif %}
-          {% endfor %}
+          {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
         </td>
         <td>{{ vendor.updated_at }}</td>
         <td class="actions">
-          <a href="{{ site.github_url }}/edit/master/_vendors/{{ vendor.url | remove: "/vendors/" }}" target="_blank"><img src="img/pencil.svg" width="15" height="15" alt="Edit {{ vendor.name }}" /></a>
+          {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
         </td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
 
-<div style="font-size: 12pt; color: #dddddd;" markdown="span">Vendor logos are provided by Clearbit.</div>
+{% include vendor_table_footer.html %}
 
 ## FAQs
 

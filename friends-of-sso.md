@@ -1,6 +1,6 @@
 ---
 title: Friends of SSO
-description: A list of vendors who understand and value the importance of security. 
+description: A list of vendors who understand and value the importance of security.
 ---
 
 ## {{ page.title }}
@@ -21,7 +21,7 @@ description: A list of vendors who understand and value the importance of securi
     {% for vendor in site.vendors_good %}
       <tr>
         <td class="actions">
-          <img src="https://logo.clearbit.com/{{ vendor.vendor_url | remove: "www." | split: '//' | last | split: '/' | first }}?size=20" />
+          {% include vendor_logo.html vendor_url=vendor.vendor_url %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
         <td>
@@ -35,24 +35,15 @@ description: A list of vendors who understand and value the importance of securi
           {% endif %}
           </td>
         <td style="text-align: center;">
-          {% for source in vendor.sources %}
-            {% if forloop.first == false %}
-              &amp;
-            {% endif %}
-            {% if source contains "://" %}
-              <a href="{{ source }}" target="_blank">&#128279;</a>
-            {% else %}
-              {{ source }}
-            {% endif %}
-          {% endfor %}
+          {% include vendor_pricing_sources.html pricing_sources=vendor.sources %}
         </td>
         <td>{{ vendor.updated_at }}</td>
         <td class="actions">
-          <a href="{{ site.github_url }}/edit/master/_vendors_good/{{ vendor.url | remove: "/vendors/" }}" target="_blank"><img src="img/pencil.svg" width="15" height="15" alt="Edit {{ vendor.name }}" /></a>
+          {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
         </td>
       </tr>
     {% endfor %}
   </tbody>
 </table>
 
-<div style="font-size: 12pt; color: #dddddd;" markdown="span">Vendor logos are provided by Clearbit.</div>
+{% include vendor_table_footer.html %}
