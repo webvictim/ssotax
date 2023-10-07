@@ -43,6 +43,7 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
       <th>Increase</th>
       <th>Notes</th>
       <th>Source</th>
+      <th>Free OAuth Providers</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>
@@ -82,6 +83,9 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
         </td>
         <td>
           {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
+        </td>
+        <td style="text-align: center;">
+          {% include vendor_oauth_providers.html providers=vendor.sign_in_oauth_providers %}
         </td>
         <td>{{ vendor.updated_at }}</td>
         <td class="actions">

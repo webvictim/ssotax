@@ -1,0 +1,6 @@
+{% for provider in include.providers %}
+{% capture provider_url %}
+{{ provider | downcase }}.com
+{% endcapture %}
+<div style="display: inline-block;">{% include vendor_logo.html vendor_url=provider_url vendor_name=provider %}</div>
+{% endfor %}
