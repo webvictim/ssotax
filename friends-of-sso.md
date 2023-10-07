@@ -5,6 +5,10 @@ description: A list of vendors who understand and value the importance of securi
 
 ## {{ page.title }}
 
+<div style="text-align: right;">
+  <a href="{{ site.github_url }}/issues/new?template=new-vendor.md" target="_blank"><button>Add new Vendor</button></a>
+</div>
+
 <table class="sortable">
   <thead>
     <tr>
