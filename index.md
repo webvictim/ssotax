@@ -2,6 +2,13 @@
 title: Wall of Shame
 ---
 
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+  setInitialSortByColumnNo(2);
+  setInitialSortByColumnNo(2);
+});
+</script>
+
 
 <details open>
 <summary>
