@@ -1,15 +1,15 @@
 ---
 base_pricing: 10
 currency: USD
+free_sso_providers:
+  - Apple
+  - Google
 name: Airtable
 notes: $60 per user per month, minimum of $3000 per month.
 pricing_scheme: per user/month
 pricing_sources:
   - https://airtable.com/pricing
   - Quote
-sign_in_oauth_providers:
-  - Apple
-  - Google
 sso_pricing: 60
 updated_at: 2019-10-19
 vendor_url: https://airtable.com

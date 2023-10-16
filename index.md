@@ -37,13 +37,13 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
     <tr>
       <th class="sorttable_nosort"></th>
       <th>Vendor</th>
+      <th>Increase Paid SSO</th>
       <th>Base Pricing</th>
-      <th>SSO Pricing</th>
+      <th>Paid SSO Pricing</th>
       <th>Pricing Scheme</th>
-      <th>Increase</th>
+      <th>Free SSO Providers</th>
       <th>Notes</th>
       <th>Source</th>
-      <th>Free Sign-In OAuth Providers</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>
@@ -60,6 +60,13 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
         </td>
         <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
+        <td sorttable_customkey="{{ sso_increase }}">
+          {% if sso_increase == "unknown" %}
+            ???
+          {% else %}
+            {{ sso_increase }}%
+          {% endif %}
+        </td>
         <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
         <td sorttable_customkey="{{ vendor.sso_pricing }}">
           {% if vendor.sso_pricing == "unknown" %}
@@ -69,12 +76,8 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
           {% endif %}
         </td>
         <td>{{ vendor.pricing_scheme }}</td>
-        <td sorttable_customkey="{{ sso_increase }}">
-          {% if sso_increase == "unknown" %}
-            ???
-          {% else %}
-            {{ sso_increase }}%
-          {% endif %}
+        <td style="text-align: center;">
+          {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
         </td>
         <td style="font-size: 0.7em;">
           <div class="tooltip">{{ vendor.notes | truncate: 25 }}
@@ -83,9 +86,6 @@ Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, wh
         </td>
         <td>
           {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
-        </td>
-        <td style="text-align: center;">
-          {% include vendor_oauth_providers.html providers=vendor.sign_in_oauth_providers %}
         </td>
         <td>{{ vendor.updated_at }}</td>
         <td class="actions">

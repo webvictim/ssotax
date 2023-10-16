@@ -1,13 +1,13 @@
 ---
 name: Freshservice
+free_sso_providers:
+  - Google
+  - Twitter
+  - Facebook
 sources:
   - https://www.freshworks.com/freshservice/service-management-features/
   - https://support.freshservice.com/en/support/solutions/articles/50000006096-enabling-advanced-role-management-in-freshservice-accounts
 scim_starting_on_plan: lowest
-sign_in_oauth_providers:
-  - Google
-  - Twitter
-  - Facebook
 sso_on_free_plans: false
 sso_on_all_paid_plans: true
 updated_at: 2023-10-07

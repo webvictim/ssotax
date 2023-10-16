@@ -17,8 +17,8 @@ description: A list of vendors who understand and value the importance of securi
       <th>SSO on all Paid Plans</th>
       <th>SSO on Free Plans</th>
       <th>SCIM starting on Plan</th>
+      <th>Free SSO Providers</th>
       <th>Source</th>
-      <th>Free Sign-In OAuth Providers</th>
       <th>Updated</th>
       <th class="sorttable_nosort"></th>
     </tr>
@@ -52,10 +52,10 @@ description: A list of vendors who understand and value the importance of securi
           {{ vendor.scim_starting_on_plan }}
         </td>
         <td style="text-align: center;">
-          {% include vendor_pricing_sources.html pricing_sources=vendor.sources %}
+          {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
         </td>
         <td style="text-align: center;">
-          {% include vendor_oauth_providers.html providers=vendor.sign_in_oauth_providers %}
+          {% include vendor_pricing_sources.html pricing_sources=vendor.sources %}
         </td>
         <td>{{ vendor.updated_at }}</td>
         <td class="actions">
