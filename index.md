@@ -4,11 +4,12 @@ title: Wall of Shame
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) {
-  setInitialSortByColumnNo(2);
-  setInitialSortByColumnNo(2);
+  setTimeout(function() {
+    setInitialSortByColumnNo(2);
+    setInitialSortByColumnNo(2);
+  }, 500);
 });
 </script>
-
 
 <details open>
 <summary>
