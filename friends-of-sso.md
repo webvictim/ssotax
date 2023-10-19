@@ -3,6 +3,17 @@ title: Friends of SSO
 description: A list of vendors who understand and value the importance of security.
 ---
 
+<details open>
+<summary>
+What does it mean?
+</summary>
+The following vendors take security seriously by offering general SSO (via OpenID Connect, SAML) in all paid plans. That's great!
+
+We also show details about [SCIM](https://scim.cloud) which allows you to manage users accounts via API.
+
+Having SSO and SCIM in the place would be the best combination in terms of security and operational efficiency because you could create user accounts with the right role/permission at this vendor. At the same time you could remove user accounts ensuring that maybe existing sessions are closed properly.
+</details>
+
 ## {{ page.title }}
 
 <div style="text-align: right;">

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <summary>
 Why does this exist?
 </summary>
-Single sign-on (SSO) is a mechanism for outsourcing the authentication for your website (or other product) to a third party identity provider, such as Google, Azure AD, Okta, PingFederate, etc.
+Single sign-on (SSO) is a mechanism for outsourcing the authentication (via OpenID Connect, SAML) for your website (or other product) to a third party identity provider, such as Google, Azure AD, Okta, PingFederate, etc.
 
 In this context, SSO refers to a SaaS or similar vendor allowing a business client to manage user accounts via the client's own identity provider, without having to rely on the vendor to provide strong authentication with audit logs, and with the ability to create and delete user accounts centrally, for all users, across all software in use by that client.
 
@@ -32,6 +32,8 @@ If companies claim to "take your security seriously", then SSO should be availab
 1. attached to a price tier, but with a reasonably small gap between the non-SSO tier and SSO tiers.
 
 Many vendors charge 2x, 3x, or 4x the base product pricing for access to SSO, which disincentivizes its use and encourages poor security practices.
+
+The following list includes vendors that have any SSO feature locked up in a "Enterprise" tier that is more than 10% more expensive. Because SSO should be available for everybody not just i.e. Google users.
 </details>
 
 ## {{ page.title }}
@@ -126,14 +128,14 @@ We disregard free tier pricing, as we can assume these aren't intended for long 
 <summary>
 What does "Quote" mean in the Source column?
 </summary>
-If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free to let me know and I'll update the page.
+If a vendor doesn't list pricing but a user has submitted pricing based on a quote, it can be included here. If a vendor feels that their actual pricing is inaccurately reflected by this quote, feel free open an issue on Github.
 </details>
 
 <details>
 <summary>
 I'm a vendor and this data is wrong!
 </summary>
-Please feel free to submit a PR to this page, or reach out at sso @ myGitHubUsername dotcom. I only want this data to be accurate.
+Please feel free to submit a PR to this page.
 </details>
 
 <details>
@@ -147,5 +149,5 @@ That's the point. Decouple your security features from your value-added services
 <summary>
 But it costs money to provide SAML support, so we can't offer it for free!
 </summary>
-  While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
+While I'd like people to really consider it a <em>bare minimum</em> feature for business SaaS, I'm OK with it costing a little extra to cover maintenance costs. If your SSO support is a 10% price hike, you're not on this list. But these percentage increases are not maintenance costs, they're revenue generation because you know your customers have no good options.
 </details>

@@ -77,3 +77,16 @@ table.sortable thead {
   font-weight: bold;
   cursor: pointer;
 }
+
+// Details
+
+details {
+  summary {
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    p {
+      display: inline;
+    }
+  }
+}
