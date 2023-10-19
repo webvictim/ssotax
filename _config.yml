@@ -12,5 +12,5 @@ kramdown:
   parse_block_html: true
 
 collections:
-  - vendors
+  - vendors_bad
   - vendors_good

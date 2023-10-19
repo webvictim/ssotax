@@ -59,7 +59,7 @@ The following list includes vendors that have any SSO feature locked up in a "En
     </tr>
   </thead>
   <tbody>
-    {% for vendor in site.vendors %}
+    {% for vendor in site.vendors_bad %}
       {% if vendor.sso_pricing == "unknown" %}
         {% assign sso_increase = "unknown" %}
       {% else %}
