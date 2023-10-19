@@ -1,5 +1,5 @@
 ---
-name: Add/Update Vendor
+name: Add/Update bad Vendor
 about: Use this template to create a pull request friendly issue.
 title: "Add/Update Vendor: [Vendor]"
 ---
@@ -8,15 +8,15 @@ title: "Add/Update Vendor: [Vendor]"
 
 **How to use? Fill the yaml file below!**
 - **name:** Use the vendors name 
-- **vendor_url:** Use the vendors public website
 - **base_pricing:** Use the vendors cheapest available price suitable for teams/companies. A plan limited to less than 10 users may not be suited for companies.
 - **sso_pricing:** Use the vendors cheapest price that includes SSO. 
 - **scim_pricing:** Use the vendors cheapest price that includes SCIM. 
 - **pricing_scheme:** How is the pricing? Is it per user per month? Per month?
 - **pricing_sources:** Add a link or a note to where you got the pricing from. One per line.
 - **notes:** If you need to clarify pricing, please add a note.
-- **sign_in_oauth_providers:** Do they support social login providers like Google, Apple, Github etc.? One per line.
+- **free_sso_providers:** Do they support free SSO providers like Google, Apple, Github etc.? One per line.
 - **updated_at:** yyyy-mm-dd of the day you filed this. 
+- **vendor_url:** Use the vendors public website
 
 ```yaml
 ---
@@ -29,7 +29,7 @@ pricing_sources:
   - https://example.com/pricing
   - Quote
 scim_pricing: 60
-sign_in_oauth_providers:
+free_sso_providers:
   - Apple
   - Google
 sso_pricing: 60

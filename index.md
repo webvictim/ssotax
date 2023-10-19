@@ -39,7 +39,7 @@ The following list includes vendors that have any SSO feature locked up in a "En
 ## {{ page.title }}
 
 <div style="text-align: right;">
-  <a href="{{ site.github_url }}/issues/new?template=new-vendor.md" target="_blank"><button>Add new Vendor</button></a>
+  <a href="{{ site.github_url }}/issues/new?template=new-bad-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
 <table class="sortable">

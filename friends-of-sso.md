@@ -17,7 +17,7 @@ Having SSO and SCIM in the place would be the best combination in terms of secur
 ## {{ page.title }}
 
 <div style="text-align: right;">
-  <a href="{{ site.github_url }}/issues/new?template=new-vendor.md" target="_blank"><button>Add new Vendor</button></a>
+  <a href="{{ site.github_url }}/issues/new?template=new-good-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
 <table class="sortable">
