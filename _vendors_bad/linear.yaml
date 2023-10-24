@@ -1,10 +1,12 @@
 ---
-base_pricing: 10
+base_pricing: 8
 currency: USD
 name: Linear
+free_sso_providers:
+  - Google
 pricing_scheme: per user/month
 pricing_sources:
   - https://linear.app/pricing
-sso_pricing: 15
-updated_at: 2022-06-09
+sso_pricing: 14
+updated_at: 2023-10-24
 vendor_url: https://www.linear.app
