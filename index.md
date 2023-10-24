@@ -30,69 +30,71 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
   <a href="{{ site.github_url }}/issues/new?template=new-bad-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
-<table class="sortable">
-  <thead>
-    <tr>
-      <th class="sorttable_nosort"></th>
-      <th>Vendor</th>
-      <th>Increase Paid SSO</th>
-      <th>Base Pricing</th>
-      <th>Paid SSO Pricing</th>
-      <th>Pricing Scheme</th>
-      <th>Free SSO Providers</th>
-      <th>Notes</th>
-      <th>Source</th>
-      <th>Updated</th>
-      <th class="sorttable_nosort"></th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for vendor in site.vendors_bad %}
-      {% if vendor.sso_pricing == "unknown" %}
-        {% assign sso_increase = "unknown" %}
-      {% else %}
-        {% assign sso_increase = vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round %}
-      {% endif %}
+<div class="table-wrapper">
+  <table class="sortable">
+    <thead>
       <tr>
-        <td class="actions">
-          {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
-        </td>
-        <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
-        <td sorttable_customkey="{{ sso_increase }}">
-          {% if sso_increase == "unknown" %}
-            ???
-          {% else %}
-            {{ sso_increase }}%
-          {% endif %}
-        </td>
-        <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
-        <td sorttable_customkey="{{ vendor.sso_pricing }}">
-          {% if vendor.sso_pricing == "unknown" %}
-            ???
-          {% else %}
-            {{ vendor.sso_pricing | format: vendor.currency}}
-          {% endif %}
-        </td>
-        <td>{{ vendor.pricing_scheme }}</td>
-        <td style="text-align: center;">
-          {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
-        </td>
-        <td style="font-size: 0.7em;">
-          <div class="tooltip">{{ vendor.notes | truncate: 25 }}
-            <span class="tooltiptext">{{ vendor.notes }}</span>
-          </div>
-        </td>
-        <td>
-          {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
-        </td>
-        <td>{{ vendor.updated_at }}</td>
-        <td class="actions">
-          {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
-        </td>
+        <th class="sorttable_nosort"></th>
+        <th>Vendor</th>
+        <th>Increase Paid SSO</th>
+        <th>Base Pricing</th>
+        <th>Paid SSO Pricing</th>
+        <th>Pricing Scheme</th>
+        <th>Free SSO Providers</th>
+        <th>Notes</th>
+        <th>Source</th>
+        <th>Updated</th>
+        <th class="sorttable_nosort"></th>
       </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {% for vendor in site.vendors_bad %}
+        {% if vendor.sso_pricing == "unknown" %}
+          {% assign sso_increase = "unknown" %}
+        {% else %}
+          {% assign sso_increase = vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round %}
+        {% endif %}
+        <tr>
+          <td class="actions">
+            {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
+          </td>
+          <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
+          <td sorttable_customkey="{{ sso_increase }}">
+            {% if sso_increase == "unknown" %}
+              ???
+            {% else %}
+              {{ sso_increase }}%
+            {% endif %}
+          </td>
+          <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
+          <td sorttable_customkey="{{ vendor.sso_pricing }}">
+            {% if vendor.sso_pricing == "unknown" %}
+              ???
+            {% else %}
+              {{ vendor.sso_pricing | format: vendor.currency}}
+            {% endif %}
+          </td>
+          <td>{{ vendor.pricing_scheme }}</td>
+          <td style="text-align: center;">
+            {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
+          </td>
+          <td style="font-size: 0.7em;">
+            <div class="tooltip">{{ vendor.notes | truncate: 25 }}
+              <span class="tooltiptext">{{ vendor.notes }}</span>
+            </div>
+          </td>
+          <td>
+            {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
+          </td>
+          <td>{{ vendor.updated_at }}</td>
+          <td class="actions">
+            {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 {% include vendor_table_footer.html %}
 

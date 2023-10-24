@@ -65,6 +65,7 @@
 
 #nav-menu {
   @include icon-position(right);
+  cursor: pointer;
   @media (min-width: 940px) {
     display:none;
   }
@@ -72,6 +73,7 @@
 
 #nav-menu-left {
   @include icon-position(left);
+  cursor: pointer;
   @media (min-width: 940px) {
     display:none;
   }
