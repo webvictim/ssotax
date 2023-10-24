@@ -1,6 +1,10 @@
 ---
 base_pricing: 84.99
 currency: USD
+free_sso_providers:
+  - Apple
+  - Facebook
+  - Google
 name: Adobe Creative Cloud
 pricing_scheme: per user/month
 pricing_sources:

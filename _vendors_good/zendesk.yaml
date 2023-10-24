@@ -1,0 +1,9 @@
+---
+name: Zendesk
+sources:
+  - https://www.zendesk.com/pricing#compare-plans
+scim_starting_on_plan: lowest
+sso_on_free_plans: false
+sso_on_all_paid_plans: true
+updated_at: 2023-10-24
+vendor_url: https://www.zendesk.com

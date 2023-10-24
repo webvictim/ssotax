@@ -1,0 +1,10 @@
+---
+base_pricing: 79
+currency: USD
+name: Status
+pricing_scheme: per month
+pricing_sources:
+  - https://status.io/pricing
+sso_pricing: 349
+updated_at: 2023-10-24
+vendor_url: https://status.io

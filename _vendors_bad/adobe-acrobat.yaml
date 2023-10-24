@@ -1,6 +1,10 @@
 ---
 base_pricing: 23.99
 currency: USD
+free_sso_providers:
+  - Apple
+  - Facebook
+  - Google
 name: Adobe Acrobat Pro
 pricing_scheme: per user/month
 pricing_sources:
