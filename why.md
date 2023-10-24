@@ -23,7 +23,7 @@ The SSO Tax was one of the reasons for starting [AccessOwl](https://www.accessow
 
 As the [original project](https://sso.tax) was not maintained for over a year and several reach outs to the maintainer were unsuccessful, I decided to [fork](https://github.com/ssotax/ssotax), updating the data and actively processing PRs to advance the core idea. At the same time it was a great opportunity to [integrate](https://github.com/robchahin/sso-wall-of-shame/issues/100) [community](https://github.com/robchahin/sso-wall-of-shame/issues/36) [feedback](https://github.com/robchahin/sso-wall-of-shame/issues/140) and improve the overall page.
 
-**The objective extends beyond shaming vendors by also applauding those who genuinely value their customers’ security!**
+**The objective extends beyond shaming vendors by also [applauding those who genuinely value their customers’ security](friends-of-sso)!**
 
 This project was originally created by [**robchahin**](https://github.com/robchahin), who single-handedly coined the term **SSO Tax** and spotlighted the issue. **Big shoutout to Rob!**
 
