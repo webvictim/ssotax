@@ -1,0 +1,11 @@
+---
+base_pricing: 12.50
+currency: USD
+name: Loom
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.loom.com/pricing
+  - Quote
+sso_pricing: 45
+updated_at: 2023-10-14
+vendor_url: https://www.loom.com/

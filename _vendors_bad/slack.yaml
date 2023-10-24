@@ -1,10 +1,10 @@
 ---
-base_pricing: 6.25
+base_pricing: 7.25
 currency: USD
 name: Slack
 pricing_scheme: per user/month
 pricing_sources:
   - https://slack.com/pricing
-sso_pricing: 11.75
-updated_at: 2022-07-26
+sso_pricing: 12.50
+updated_at: 2023-06-29
 vendor_url: https://slack.com

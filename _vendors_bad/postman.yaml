@@ -1,10 +1,10 @@
 ---
-base_pricing: 12
+base_pricing: 14
 currency: USD
 name: Postman
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.postman.com/pricing
-sso_pricing: 24
-updated_at: 2020-02-19
+sso_pricing: 49
+updated_at: 2023-10-14
 vendor_url: https://www.postman.com/

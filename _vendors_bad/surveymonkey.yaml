@@ -2,7 +2,7 @@
 base_pricing: 25
 currency: USD
 name: SurveyMonkey
-nots: SSO pricing over $75 per u/m
+notes: SSO pricing over $75 per u/m
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.surveymonkey.com/pricing/details/

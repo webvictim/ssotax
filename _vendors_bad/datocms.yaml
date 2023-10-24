@@ -1,0 +1,11 @@
+---
+base_pricing: 100
+currency: USD
+name: DatoCMS
+pricing_scheme: per month
+pricing_sources:
+  - https://www.datocms.com/pricing
+  - Quote
+sso_pricing: 667
+updated_at: 2023-10-17
+vendor_url: https://datocms.com

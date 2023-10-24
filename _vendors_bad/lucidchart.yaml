@@ -1,10 +1,11 @@
 ---
-base_pricing: 7
+base_pricing: 9
 currency: USD
 name: Lucidchart
 pricing_scheme: per user/month
 pricing_sources:
-  - https://www.lucidchart.com/users/registerLevel
-sso_pricing: unknown
-updated_at: 2018-10-17
+  - https://lucid.app/pricing/lucidchart
+  - Quote
+sso_pricing: 20
+updated_at: 2022-05-24
 vendor_url: https://www.lucidchart.com

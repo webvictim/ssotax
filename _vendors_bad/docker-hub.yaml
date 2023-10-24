@@ -1,10 +1,10 @@
 ---
-base_pricing: 7
+base_pricing: 9
 currency: USD
 name: Docker Hub
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.docker.com/pricing
-sso_pricing: 21
-updated_at: 2021-01-26
+sso_pricing: 24
+updated_at: 2023-10-16
 vendor_url: https://www.docker.com/

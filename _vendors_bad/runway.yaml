@@ -1,0 +1,10 @@
+---
+base_pricing: 499
+currency: USD
+name: Runway
+pricing_scheme: per app/month
+pricing_sources:
+  - https://www.runway.team/pricing
+sso_pricing: 2166.67
+updated_at: 2023-10-02
+vendor_url: https://runway.team

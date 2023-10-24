@@ -1,0 +1,10 @@
+---
+base_pricing: 39
+currency: USD
+name: Hotjar Observe
+pricing_scheme: per month
+pricing_sources:
+  - https://www.hotjar.com/pricing/
+sso_pricing: 213
+updated_at: 2023-10-17
+vendor_url: https://www.hotjar.com

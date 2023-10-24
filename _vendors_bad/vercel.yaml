@@ -1,0 +1,11 @@
+---
+base_pricing: 20
+currency: USD
+name: Vercel
+notes: Enterprise for 8 users is "low-to-mid 4 figures", so pricing increase is based on $2000 split 8 ways.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://vercel.com/pricing
+sso_pricing: unknown
+updated_at: 2023-10-17
+vendor_url: https://vercel.com

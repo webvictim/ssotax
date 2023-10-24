@@ -1,0 +1,10 @@
+---
+base_pricing: 19
+currency: USD
+name: Front
+pricing_scheme: per user/month
+pricing_sources:
+  - https://front.com/pricing
+sso_pricing: 99
+updated_at: 2023-10-15
+vendor_url: https://www.front.com

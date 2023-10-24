@@ -1,0 +1,10 @@
+---
+base_pricing: 15.99
+currency: USD
+name: Zoom
+pricing_scheme: per user/month
+pricing_sources:
+  - https://zoom.us/pricing
+sso_pricing: 19.99
+updated_at: 2023-10-14
+vendor_url: https://zoom.us/

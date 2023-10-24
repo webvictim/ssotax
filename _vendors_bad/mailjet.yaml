@@ -1,0 +1,11 @@
+---
+base_pricing: 25
+currency: USD
+name: Mailjet
+pricing_scheme: per month
+pricing_sources:
+  - https://www.mailjet.com/pricing/
+  - https://documentation.mailjet.com/hc/en-us/articles/5216831817499-How-to-enable-SAML-SSO-with-Mailjet#h_01G01MC9HVB5DYRJKSERS9FHTK
+sso_pricing: 95
+updated_at: 2023-04-26
+vendor_url: https://www.mailjet.com

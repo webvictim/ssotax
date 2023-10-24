@@ -1,0 +1,10 @@
+---
+base_pricing: 84.99
+currency: USD
+name: Adobe Creative Cloud
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.adobe.com/creativecloud/business-plans.html
+sso_pricing: 140.99
+updated_at: 2023-07-18
+vendor_url: https://www.adobe.com

@@ -4,7 +4,7 @@ currency: USD
 name: Notion
 pricing_scheme: per user/month
 pricing_sources:
-  - https://www.notion.so/Plans-pricing-6067b27f7a244ccc8320c984baea61d7#bbb051f972bb45c8a8c250ed8ae686ea
-sso_pricing: 20
-updated_at: 2020-04-29
+  - https://www.notion.so/pricing
+sso_pricing: 15
+updated_at: 2023-10-15
 vendor_url: https://www.notion.so

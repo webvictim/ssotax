@@ -1,0 +1,12 @@
+---
+base_pricing: 171
+currency: USD
+name: Breezy HR
+notes: SSO is a $1000 per month addon to the Pro plan, which starts at $500 per month.
+pricing_scheme: per month
+pricing_sources:
+  - https://breezy.hr/pricing
+  - Quote
+sso_pricing: 1500
+updated_at: 2023-10-15
+vendor_url: https://breezy.hr

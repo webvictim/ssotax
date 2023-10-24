@@ -1,0 +1,10 @@
+---
+base_pricing: 49
+currency: USD
+name: Balsamiq Wireframes
+pricing_scheme: per month
+pricing_sources:
+  - https://balsamiq.com/buy/#cloud
+sso_pricing: 199
+updated_at: 2023-10-15
+vendor_url: https://balsamiq.com/

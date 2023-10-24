@@ -1,0 +1,10 @@
+---
+base_pricing: 10
+currency: USD
+name: OptiSigns
+pricing_scheme: per device/month
+pricing_sources:
+  - https://www.optisigns.com/pricing
+sso_pricing: 15
+updated_at: 2023-10-17
+vendor_url: https://www.optisigns.com

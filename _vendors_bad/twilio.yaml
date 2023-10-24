@@ -1,11 +1,12 @@
 ---
-base_pricing: 0
+base_pricing: unknown
 currency: USD
 name: Twilio
-notes: Base pricing is extremely variable. SSO is the greater of $15,000 or a 30% surcharge, so could be anywhere from 30% to 000s%
+notes: SSO is included in the Administrative and Enterprise editions, starting at $2500 per month. Because irony is dead, SSO is not included in the Security edition.
 pricing_scheme:
 pricing_sources:
-  - https://www.twilio.com/enterprise
+  - https://www.twilio.com/editions
+  - Quote
 sso_pricing: unknown
-updated_at: 2018-10-22
+updated_at: 2023-10-16
 vendor_url: https://twilio.com

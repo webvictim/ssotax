@@ -49,7 +49,7 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
     </thead>
     <tbody>
       {% for vendor in site.vendors_bad %}
-        {% if vendor.sso_pricing == "unknown" %}
+        {% if vendor.sso_pricing == "unknown" or vendor.base_pricing == "unknown" %}
           {% assign sso_increase = "unknown" %}
         {% else %}
           {% assign sso_increase = vendor.sso_pricing | minus: vendor.base_pricing | times: 1.0 | divided_by: vendor.base_pricing | times: 100 | round %}
@@ -66,7 +66,13 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
               {{ sso_increase }}%
             {% endif %}
           </td>
-          <td sorttable_customkey="{{ vendor.base_pricing }}">{{ vendor.base_pricing | format: vendor.currency }}</td>
+          <td sorttable_customkey="{{ vendor.base_pricing }}">
+            {% if vendor.base_pricing == "unknown" %}
+              ???
+            {% else %}
+              {{ vendor.base_pricing | format: vendor.currency}}
+            {% endif %}
+          </td>
           <td sorttable_customkey="{{ vendor.sso_pricing }}">
             {% if vendor.sso_pricing == "unknown" %}
               ???

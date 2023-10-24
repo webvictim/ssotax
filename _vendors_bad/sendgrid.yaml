@@ -1,0 +1,10 @@
+---
+base_pricing: 20
+currency: USD
+name: Sendgrid
+pricing_scheme: per month
+pricing_sources:
+  - https://sendgrid.com/pricing/
+sso_pricing: 90
+updated_at: 2023-10-15
+vendor_url: https://sendgrid.com

@@ -1,0 +1,10 @@
+---
+base_pricing: 9
+currency: USD
+name: LiveAgent
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.liveagent.com/pricing/
+sso_pricing: 49
+updated_at: 2023-10-14
+vendor_url: https://www.liveagent.com
