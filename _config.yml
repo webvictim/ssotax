@@ -3,8 +3,8 @@ description: >-
   A list of vendors that treat single sign-on as a luxury feature, not a core
   security requirement.
 
-url: https://ssotax.github.io/ssotax
-baseurl: https://ssotax.github.io/ssotax
+url: https://ssotax.org
+baseurl: https://ssotax.org
 
 github_url: https://github.com/ssotax/ssotax
 
