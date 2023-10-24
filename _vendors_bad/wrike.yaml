@@ -1,0 +1,11 @@
+---
+base_pricing: 9.80
+currency: USD
+name: Wrike
+notes: You have to contact them for enterprise pricing, but for teams in the 10-20 range you're looking at ~$35 u/m and edging closer to $30 as you go past the 50 user mark.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.wrike.com/price/
+sso_pricing: unknown
+updated_at: 2021-04-22
+vendor_url: https://www.wrike.com/price/

@@ -1,0 +1,10 @@
+---
+base_pricing: 119
+currency: USD
+name: Bit.ly
+pricing_scheme: per month
+pricing_sources:
+  - https://bitly.com/pages/pricing
+sso_pricing: 416
+updated_at: 2021-09-20
+vendor_url: https://www.bit.ly

@@ -1,0 +1,15 @@
+---
+base_pricing: 300
+currency: USD
+name: Contentful
+notes: They only offer SSO for enterprise (starting at $32,688 annually), and this quote is based off of their lowest packages for their pricing model by Space, Platform, and SLA.
+free_sso_providers:
+  - Github
+  - Google
+pricing_scheme: per month
+pricing_sources:
+  - https://www.contentful.com/pricing/
+  - Quote
+sso_pricing: unknown
+updated_at: 2023-10-24
+vendor_url: https://www.contentful.com/

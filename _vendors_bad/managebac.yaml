@@ -1,0 +1,11 @@
+---
+base_pricing: 48
+currency: USD
+name: Pamoja Education / ManageBac / Faria Group
+pricing_scheme: per student
+pricing_sources:
+  - https://www.managebac.com/contactsales
+  - Quote
+sso_pricing: 60.80
+updated_at: 2022-08-22
+vendor_url: https://www.managebac.com/passport

@@ -1,0 +1,10 @@
+---
+name: Autodesk
+sources:
+  - https://www.autodesk.com/buying/plans
+  - https://help.autodesk.com/view/SSOGUIDE/ENU/?guid=SSOGUIDE_Okta_Guide_About_Single_Sign_on_SSO_Implementing_SSO_html
+scim_starting_on_plan: highest
+sso_on_free_plans: false
+sso_on_all_paid_plans: true
+updated_at: 2023-10-24
+vendor_url: https://www.autodesk.com/

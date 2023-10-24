@@ -1,0 +1,10 @@
+---
+base_pricing: 29
+currency: USD
+name: booqable
+pricing_scheme: per month
+pricing_sources:
+  - https://booqable.com/pricing/
+sso_pricing: 249
+updated_at: 2021-11-10
+vendor_url: https://booqable.com/

@@ -1,0 +1,13 @@
+---
+base_pricing: 75
+currency: USD
+name: Cypress
+free_sso_providers:
+  - Github
+  - Google
+pricing_scheme: per month
+pricing_sources:
+  - https://www.cypress.io/pricing
+sso_pricing: 300
+updated_at: 2023-10-24
+vendor_url: https://cypress.io/

@@ -1,0 +1,11 @@
+---
+base_pricing: 49
+currency: USD
+name: Probely
+notes: Percentage increase based on the only number publicly available. Actual increase is likely much higher, as Enterprise is listed as 'Call Us' (over $499/month) and is the only plan to include SSO
+pricing_scheme: per site/month
+pricing_sources:
+  - https://probely.com/pricing/
+sso_pricing: unknown
+updated_at: 2021-03-20
+vendor_url: https://probely.com/

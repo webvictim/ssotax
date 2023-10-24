@@ -1,0 +1,11 @@
+---
+base_pricing: 45
+currency: USD
+name: Docsend
+notes: Increase is inferred from the previous (non-enterprise) level at $60 per u/m after the initial included users.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.docsend.com/pricing/
+sso_pricing: unknown
+updated_at: 2021-04-06
+vendor_url: https://docsend.com

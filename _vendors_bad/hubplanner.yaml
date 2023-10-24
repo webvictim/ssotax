@@ -1,0 +1,11 @@
+---
+base_pricing: 7
+currency: USD
+name: HubPlanner
+notes: SSO is offered as a premium extension for $299 extra a month. Signing up to the Premium or ??? priced Enterprise tier appears to include Extensions, though it's not clear if SSO is one of them.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://hubplanner.com/pricing/
+sso_pricing: 18
+updated_at: 2021-05-04
+vendor_url: https://hubplanner.com/

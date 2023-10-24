@@ -1,0 +1,10 @@
+---
+base_pricing: 5
+currency: USD
+name: Dashlane
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.dashlane.com/business/pricing
+sso_pricing: 8
+updated_at: 2021-11-09
+vendor_url: https://dashlane.com

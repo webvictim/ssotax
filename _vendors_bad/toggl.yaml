@@ -1,0 +1,10 @@
+---
+base_pricing: 9
+currency: USD
+name: Toggl
+pricing_scheme: per user/month
+pricing_sources:
+  - https://toggl.com/plan/pricing
+sso_pricing: 15
+updated_at: 2021-05-04
+vendor_url: https://toggl.com/

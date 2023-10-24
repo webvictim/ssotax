@@ -1,0 +1,11 @@
+---
+base_pricing: 15
+currency: USD
+name: Dialpad
+notes: Over $25/u/m & 100 seat minimum.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.dialpad.com/pricing/
+sso_pricing: unknown
+updated_at: 2021-11-09
+vendor_url: https://www.dialpad.com/

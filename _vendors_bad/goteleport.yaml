@@ -1,0 +1,10 @@
+---
+base_pricing: 15
+currency: USD
+name: Teleport
+pricing_scheme: per user/month
+pricing_sources:
+  - https://goteleport.com/pricing/
+sso_pricing: unknown
+updated_at: 2023-10-24
+vendor_url: https://goteleport.com/

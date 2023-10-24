@@ -1,0 +1,14 @@
+---
+name: Grafana
+free_sso_providers:
+  - Amazon
+  - Github
+  - Google
+  - Microsoft
+sources:
+  - https://grafana.com/pricing/
+scim_starting_on_plan: highest
+sso_on_free_plans: true
+sso_on_all_paid_plans: true
+updated_at: 2023-10-24
+vendor_url: https://grafana.com/

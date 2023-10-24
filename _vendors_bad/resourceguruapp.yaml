@@ -1,0 +1,10 @@
+---
+base_pricing: 2.50
+currency: USD
+name: ResourceGuru
+pricing_scheme: per user/month
+pricing_sources:
+  - https://resourceguruapp.com/pricing
+sso_pricing: 6.65
+updated_at: 2021-05-04
+vendor_url: https://resourceguruapp.com/

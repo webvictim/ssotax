@@ -1,0 +1,12 @@
+---
+base_pricing: 5
+currency: USD
+name: ClickUp
+notes: Call us pricing. Enterprise MSRP quoted at $299 per user per year.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://clickup.com/pricing
+  - Quote
+sso_pricing: 25
+updated_at: 2021-04-08
+vendor_url: https://clickup.com

@@ -1,0 +1,10 @@
+---
+base_pricing: 3
+currency: USD
+name: ToolUp
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.toolup.io/pricing
+sso_pricing: 4.5
+updated_at: 2021-04-28
+vendor_url: https://www.toolup.io/
