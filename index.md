@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   setTimeout(function() {
     setInitialSortByColumnNo(2);
     setInitialSortByColumnNo(2);
-  }, 500);
+  }, 200);
 });
 </script>
 
