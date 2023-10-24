@@ -65,6 +65,10 @@ table td.actions {
 table {
   border-collapse: collapse;
   width: 100%;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 tr:hover {

@@ -7,11 +7,11 @@ description: A list of vendors who understand and value the importance of securi
 <summary>
 What does it mean?
 </summary>
-The following vendors take security seriously by offering general SSO (via OpenID Connect, SAML) in all paid plans. That's great!
+The following vendors take security seriously by offering SSO without unreasonable surcharges (via OpenID Connect, SAML) in all paid plans. *Find out more about the [why](/why).*
 
-We also show details about [SCIM](https://scim.cloud) which allows you to manage users accounts via API.
+Another important puzzle piece to manage your organizations access is SCIM. It allows you to centrally provision employee’s with specific user permissions and deprovisions user accounts during an offboarding. That’s why we also added where [SCIM](https://scim.cloud/) is available.
 
-Having SSO and SCIM in the place would be the best combination in terms of security and operational efficiency because you could create user accounts with the right role/permission at this vendor. At the same time you could remove user accounts ensuring that maybe existing sessions are closed properly.
+Best practice for vendors to keep their customers secure would be offering both SCIM and SSO without unreasonable surcharges.
 </details>
 
 ## {{ page.title }}
