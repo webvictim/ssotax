@@ -19,7 +19,7 @@ Vendor data lives in `_vendors_bad/` and `_vendors_good/`.
 
 ## 💪 Contributors
 
-Thank you for continuously making Nango better ❤️
+Thank you for continuously making SSOTax better ❤️
 
 <a href="https://github.com/ssotax/ssotax/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ssotax/ssotax" />
