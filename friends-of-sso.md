@@ -6,9 +6,9 @@ order: 2
 
 <details open>
 <summary>
-What does it mean?
+What is a Friend of SSO?
 </summary>
-The following vendors take security seriously by offering SSO without unreasonable surcharges (via OpenID Connect, SAML) in all paid plans. *Find out more about the [why](/why).*
+The following vendors take security seriously by offering SSO without unreasonable surcharges (via OpenID Connect, SAML) in all paid plans. *[Find out more about the why](/why).*
 
 Another important puzzle piece to manage your organizations access is SCIM. It allows you to centrally provision employee’s with specific user permissions and deprovisions user accounts during an offboarding. That’s why we also added where [SCIM](https://scim.cloud/) is available.
 
@@ -17,10 +17,11 @@ Best practice for vendors to keep their customers secure would be offering both 
 
 ## {{ page.title }}
 
-<div style="text-align: right;">
+<div style="text-align: right;" markdown="0">
   <a href="{{ site.github_url }}/issues/new?template=new-good-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
+{% include sharing_links.html %}
 <div class="table-wrapper">
   <table class="sortable">
     <thead>

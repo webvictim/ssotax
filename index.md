@@ -18,7 +18,7 @@ Why does this exist?
 </summary>
 The **SSO Tax** stands for the practice of SaaS vendors to upcharge for Single-Sign-On ("SSO"). 
 
-As a consequence, features like SSO, and more specifically OpenID Connect or SAML, are often restricted to enterprise-level subscriptions. This pricing strategy makes it prohibitively expensive for non-enterprise businesses to centrally manage their employees' access. *Find out more about the [why](/why).*
+As a consequence, features like SSO, and more specifically OpenID Connect or SAML, are often restricted to enterprise-level subscriptions. This pricing strategy makes it prohibitively expensive for non-enterprise businesses to centrally manage their employees' access. *[Find out more about the why](/why).*
 
 The following list includes vendors that have SSO locked up in an subscription tier that is more than 10% more expensive than the standard price.
 
@@ -27,10 +27,11 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
 
 ## {{ page.title }}
 
-<div style="text-align: right;">
+<div style="text-align: right;" markdown="0">
   <a href="{{ site.github_url }}/issues/new?template=new-bad-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
+{% include sharing_links.html %}
 <div class="table-wrapper">
   <table class="sortable">
     <thead>
