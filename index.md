@@ -63,7 +63,9 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
           <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
           <td sorttable_customkey="{{ sso_increase }}">
             {% if sso_increase == "unknown" %}
-              ???
+              <div class="tooltip">???
+                <span class="tooltiptext" style="font-size: 0.7em;">Pricing is not transparent and unknown. Often vendors ask you to call them to get a quote.</span>
+              </div>
             {% else %}
               {{ sso_increase }}%
             {% endif %}
