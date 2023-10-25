@@ -1,5 +1,6 @@
 ---
 title: Wall of Shame
+order: 1
 ---
 
 <script type="text/javascript">

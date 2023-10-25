@@ -1,6 +1,7 @@
 ---
 title: Why?
 description: Why does SSOtax.org exist and what is it?
+order: 3
 ---
 
 [**SSOtax.org**](http://ssotax.org) is an open source project to raise awareness how important SSO is as a core security requirement and that it should be available for everyone! It is maintained by the IT and InfoSec community.

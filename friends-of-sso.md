@@ -1,6 +1,7 @@
 ---
 title: Friends of SSO
 description: A list of vendors who understand and value the importance of security.
+order: 2
 ---
 
 <details open>
