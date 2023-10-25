@@ -1,10 +1,12 @@
 ---
 base_pricing: 12
 currency: USD
+free_sso_providers:
+  - Google
 name: Figma
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.figma.com/pricing
 sso_pricing: 45
-updated_at: 2019-10-19
+updated_at: 2023-10-25
 vendor_url: https://www.figma.com

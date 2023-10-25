@@ -1,10 +1,13 @@
 ---
 base_pricing: 8
 currency: USD
+free_sso_providers:
+  - Apple
+  - Google
 name: Notion
 pricing_scheme: per user/month
 pricing_sources:
   - https://www.notion.so/pricing
 sso_pricing: 15
-updated_at: 2023-10-15
+updated_at: 2023-10-25
 vendor_url: https://www.notion.so

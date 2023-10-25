@@ -1,11 +1,15 @@
 ---
 base_pricing: 9
 currency: USD
+free_sso_providers:
+  - Google
+  - Microsoft
+  - Slack
 name: Lucidchart
 pricing_scheme: per user/month
 pricing_sources:
   - https://lucid.app/pricing/lucidchart
   - Quote
 sso_pricing: 20
-updated_at: 2022-05-24
+updated_at: 2023-10-25
 vendor_url: https://www.lucidchart.com

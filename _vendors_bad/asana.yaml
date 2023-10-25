@@ -1,6 +1,8 @@
 ---
 base_pricing: 25
 currency: USD
+free_sso_providers:
+  - Google
 name: Asana
 notes: Based on business vs. enterprise tier quote; premium is the lower paid tier and would reflect a larger tax.
 pricing_scheme: per user/month
@@ -8,5 +10,5 @@ pricing_sources:
   - https://asana.com/pricing
   - Quote
 sso_pricing: 60
-updated_at: 2020-12-09
+updated_at: 2023-10-25
 vendor_url: https://asana.com

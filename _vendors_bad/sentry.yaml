@@ -1,11 +1,14 @@
 ---
 base_pricing: 26
 currency: USD
+free_sso_providers:
+  - Github
+  - Google
 name: Sentry
 notes: Sentry also provides a self-hosted product in which SSO is included for free.
 pricing_scheme: per 100K events
 pricing_sources:
   - https://sentry.io/pricing/
 sso_pricing: 80
-updated_at: 2018-10-20
+updated_at: 2023-10-25
 vendor_url: https://sentry.io

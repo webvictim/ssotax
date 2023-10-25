@@ -1,6 +1,9 @@
 ---
 base_pricing: 46
 currency: USD
+free_sso_providers:
+  - Google
+  - Microsoft
 name: Hubspot Marketing
 pricing_scheme: per month
 pricing_sources:
