@@ -1,0 +1,13 @@
+---
+base_pricing: 20
+currency: USD
+free_sso_providers:
+  - Google
+name: Mixpanel
+notes: Base plan includes 10K events, whereas SSO-enabled plan (Entreprise) includes 5M events.
+pricing_scheme: per month
+pricing_sources:
+  - https://mixpanel.com/pricing
+sso_pricing: 833
+updated_at: 2023-10-25
+vendor_url: https://mixpanel.com

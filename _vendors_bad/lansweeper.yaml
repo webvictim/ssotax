@@ -1,0 +1,11 @@
+---
+base_pricing: 1
+currency: USD
+name: Lansweeper
+notes: Minimum number of assets is 2000, and SSO is only included in the Pro or Enterprise plans.
+pricing_scheme: per asset/year
+pricing_sources:
+  - https://www.lansweeper.com/pricing
+sso_pricing: 2
+updated_at: 2023-10-25
+vendor_url: https://www.lansweeper.com/
