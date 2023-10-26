@@ -1,0 +1,13 @@
+---
+base_pricing: 49
+currency: USD
+free_sso_providers:
+  - Google
+  - Microsoft
+name: Apollo
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.apollo.io/pricing
+sso_pricing: 79
+updated_at: 2023-10-26
+vendor_url: https://apollo.io
