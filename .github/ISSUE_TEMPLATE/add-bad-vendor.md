@@ -4,7 +4,7 @@ about: Use this template to create a pull request friendly issue.
 title: "Add/Update Vendor: [Vendor]"
 ---
 
-**Do you want to add or update the vendor? Adjust the title accordingly!**.
+*Do you want to add or update the vendor? Adjust the title accordingly!*
 
 **How to use? Fill the yaml file below!**
 - **name:** Use the vendors name 
@@ -22,6 +22,9 @@ title: "Add/Update Vendor: [Vendor]"
 ---
 base_pricing: 10
 currency: USD
+free_sso_providers:
+  - Apple
+  - Google
 name: Example Vendor
 notes: You can add SSO to a plan for $5 per u/m.
 pricing_scheme: per user/month
@@ -29,9 +32,6 @@ pricing_sources:
   - https://example.com/pricing
   - Quote
 scim_pricing: 60
-free_sso_providers:
-  - Apple
-  - Google
 sso_pricing: 60
 updated_at: 2007-07-29
 vendor_url: https://example.com
