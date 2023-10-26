@@ -28,7 +28,7 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
 ## {{ page.title }}
 
 <div style="text-align: right;" markdown="0">
-  <a href="{{ site.github_url }}/issues/new?template=new-bad-vendor.md" target="_blank"><button>Add new Vendor</button></a>
+  <a href="{{ site.github_url }}/issues/new?template=add-bad-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
 {% include sharing_links.html %}

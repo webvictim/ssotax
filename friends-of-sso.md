@@ -18,7 +18,7 @@ Best practice for vendors to keep their customers secure would be offering both 
 ## {{ page.title }}
 
 <div style="text-align: right;" markdown="0">
-  <a href="{{ site.github_url }}/issues/new?template=new-good-vendor.md" target="_blank"><button>Add new Vendor</button></a>
+  <a href="{{ site.github_url }}/issues/new?template=add-good-vendor.md" target="_blank"><button>Add new Vendor</button></a>
 </div>
 
 {% include sharing_links.html %}
