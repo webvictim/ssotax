@@ -65,13 +65,13 @@ Best practice for vendors to keep their customers secure would be offering both 
           <td style="color: {{ scim_color }}; font-weight: bold; text-align: center;">
             {{ vendor.scim_starting_on_plan }}
           </td>
-          <td style="text-align: center;">
+          <td class="centered">
             {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
           </td>
-          <td style="text-align: center;">
+          <td class="centered">
             {% include vendor_pricing_sources.html pricing_sources=vendor.sources %}
           </td>
-          <td>{{ vendor.updated_at }}</td>
+          <td class="small">{{ vendor.updated_at }}</td>
           <td class="actions">
             {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
           </td>

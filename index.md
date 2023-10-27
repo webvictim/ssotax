@@ -61,7 +61,7 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
             {% include vendor_logo.html vendor_url=vendor.vendor_url vendor_name=vendor.name %}
           </td>
           <td><a href="{{ vendor.vendor_url }}" target="_blank">{{ vendor.name }}</a></td>
-          <td sorttable_customkey="{{ sso_increase }}">
+          <td sorttable_customkey="{{ sso_increase }}" class="centered">
             {% if sso_increase == "unknown" %}
               <div class="tooltip">???
                 <span class="tooltiptext" style="font-size: 0.7em;">Pricing is not transparent and unknown. Often vendors ask you to call them to get a quote.</span>
@@ -70,22 +70,22 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
               {{ sso_increase }}%
             {% endif %}
           </td>
-          <td sorttable_customkey="{{ vendor.base_pricing }}">
+          <td sorttable_customkey="{{ vendor.base_pricing }}" class="centered">
             {% if vendor.base_pricing == "unknown" %}
               ???
             {% else %}
               {{ vendor.base_pricing | format: vendor.currency}}
             {% endif %}
           </td>
-          <td sorttable_customkey="{{ vendor.sso_pricing }}">
+          <td sorttable_customkey="{{ vendor.sso_pricing }}" class="centered">
             {% if vendor.sso_pricing == "unknown" %}
               ???
             {% else %}
               {{ vendor.sso_pricing | format: vendor.currency}}
             {% endif %}
           </td>
-          <td>{{ vendor.pricing_scheme }}</td>
-          <td style="text-align: center;">
+          <td class="centered small">{{ vendor.pricing_scheme }}</td>
+          <td class="centered">
             {% include vendor_free_sso_providers.html providers=vendor.free_sso_providers %}
           </td>
           <td style="font-size: 0.7em;">
@@ -93,10 +93,10 @@ Imagine buying a car and the manufacturer asks for an extra payment to unlock 10
               <span class="tooltiptext">{{ vendor.notes }}</span>
             </div>
           </td>
-          <td>
+          <td class="centered">
             {% include vendor_pricing_sources.html pricing_sources=vendor.pricing_sources %}
           </td>
-          <td>{{ vendor.updated_at }}</td>
+          <td class="small">{{ vendor.updated_at }}</td>
           <td class="actions">
             {% include vendor_edit_link.html vendor_path=vendor.path vendor_name=vendor.name %}
           </td>

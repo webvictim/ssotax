@@ -8,9 +8,21 @@ table img {
   margin-bottom: 0;
 }
 
-table td.actions {
-  vertical-align: middle;
-  width: 25px;
+table {
+
+  td.actions {
+    vertical-align: middle;
+    width: 25px;
+  }
+
+  td.centered {
+    text-align: center;
+  }
+
+  td.small {
+    font-size: 0.8em;
+    white-space: nowrap;
+  }
 }
 
 // https://www.w3schools.com/css/css_tooltip.asp
