@@ -1,0 +1,13 @@
+---
+base_pricing: 12
+currency: USD
+name: Shortcut
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.shortcut.com/pricing
+notes: SSO available as an add-in, but pricing isn't published
+sso_pricing: unknown
+free_sso_providers:
+  - Google
+updated_at: 2023-11-02
+vendor_url: https://www.shortcut.com
