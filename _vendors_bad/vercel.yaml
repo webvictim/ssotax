@@ -1,6 +1,10 @@
 ---
 base_pricing: 20
 currency: USD
+free_sso_providers:
+  - Bitbucket
+  - Github
+  - Gitlab
 name: Vercel
 notes: Enterprise for 8 users is "low-to-mid 4 figures", so pricing increase is based on $2000 split 8 ways.
 pricing_scheme: per user/month
