@@ -1,0 +1,12 @@
+---
+base_pricing: 8
+currency: USD
+free_sso_providers:
+  - Google
+name: DocuSeal
+pricing_scheme: per user/month
+pricing_sources:
+  - https://www.docuseal.co/pricing
+sso_pricing: 20
+updated_at: 2023-11-15
+vendor_url: https://www.docuseal.co
