@@ -1,0 +1,9 @@
+---
+name: Terraform Cloud
+sources:
+  - https://www.hashicorp.com/products/terraform/pricing
+scim_starting_on_plan: unknown
+sso_on_free_plans: true
+sso_on_all_paid_plans: true
+updated_at: 2023-11-15
+vendor_url: https://www.hashicorp.com/products/terraform
