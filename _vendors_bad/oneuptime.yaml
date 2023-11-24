@@ -1,0 +1,11 @@
+---
+base_pricing: 20
+currency: USD
+name: OneUptime
+notes: When billed yearly.
+pricing_scheme: per user/month
+pricing_sources:
+  - https://oneuptime.com/pricing
+sso_pricing: 84
+updated_at: 2023-11-24
+vendor_url: https://oneuptime.com
