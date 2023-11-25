@@ -1,0 +1,13 @@
+---
+base_pricing: 20
+currency: USD
+free_sso_providers:
+  - Github
+  - Google
+name: Resend
+pricing_scheme: per user/month
+pricing_sources:
+  - https://resend.com/pricing
+sso_pricing: unknown
+updated_at: 2023-11-25
+vendor_url: https://resend.com
