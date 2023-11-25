@@ -9,6 +9,13 @@ table img {
 }
 
 table {
+  thead th {
+    position: sticky;
+    background-color: #ccc;
+    color: #666666;
+    top: 0;
+    z-index: 1;
+  }
 
   td.actions {
     vertical-align: middle;
@@ -74,9 +81,11 @@ table {
 
 // Table Hover
 
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
+@media only screen and (max-width: 480px) {
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
 }
 
 table {
@@ -88,14 +97,13 @@ table {
   }
 }
 
-tr:hover {
+tbody tr:hover {
   background-color: #eee;
 }
 
 // Sortable tables
+
 table.sortable thead {
-  background-color: #ccc;
-  color: #666666;
   font-weight: bold;
   cursor: pointer;
 }
