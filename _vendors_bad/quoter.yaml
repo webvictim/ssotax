@@ -1,0 +1,11 @@
+---
+base_pricing: 199
+currency: USD
+name: Quoter
+notes: Quoter offers a lower tier at $99/mo but it's intended for individuals. The lowest tier supporting SSO is $299/mo but SSO is available as an add-on for $59/mo so the lower cost is used here.
+pricing_scheme: per month
+pricing_sources:
+  - https://www.quoter.com/pricing
+sso_pricing: 258
+updated_at: 2023-11-25
+vendor_url: https://www.quoter.com
