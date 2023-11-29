@@ -1,0 +1,10 @@
+---
+base_pricing: 37
+currency: USD
+name: Shelf
+pricing_scheme: per month
+pricing_sources:
+  - https://www.shelf.nu/pricing
+sso_pricing: unknown
+updated_at: 2007-07-29
+vendor_url: https://www.shelf.nu/
