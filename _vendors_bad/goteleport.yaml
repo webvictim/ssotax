@@ -2,6 +2,8 @@
 base_pricing: 15
 currency: USD
 name: Teleport
+free_sso_providers:
+  - Github
 pricing_scheme: per user/month
 pricing_sources:
   - https://goteleport.com/pricing/
